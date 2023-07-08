@@ -1,13 +1,86 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+*{
+font-family: "Quicksand";
+height: 99%;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  background-image: url("back.avif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+
+.root{
+  height: 95%;
+}
+.calculator{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: relative;
+  left: 35%;
+  top: 8%;
+  width: 24%;
+  height: 85%;
+  background-color: #182C37;
+  padding:5px;
+  border-radius: 30px;
+}
+.output~span{
+width: 18%;
+height: 9%;
+border-radius: 10px;
+background-color: #E2DCCE;
+margin: 5px 10px;
+line-height: 67px;
+font-size: 35px;
+text-align: center;
+font-weight: bold;
+cursor: pointer;
+}
+
+.output{
+  overflow-wrap: break-word;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 90%;
+  height: 21%;
+  margin:35px 10px 5px;
+  border-radius: 8px;
+  background-color: #cfd8dc;
+  font-family: "Azeret Mono",'Courier New', Courier, monospace;
+}
+
+.output span{
+  margin-left: 10px;
+  font-weight: bold;
+  line-height: 40px;
+  font-size: 25px;
+  width: 100% !important;
+  height: 50% !important;
+}
+.operation{
+  background-color: #AD5858 !important;
+}
+
+
+.equal{
+  background-color: #D6A680 !important;
+}
+
+
+.math{
+  background-color: lightseagreen !important;
+}
+
+
+.input{
+  margin-right: 8px;
+  overflow: hidden;
+  height: 20% !important;
+  break-inside: avoid;
+  word-break: break-all;
 }
